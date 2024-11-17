@@ -2,7 +2,6 @@
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background: #f5f5f7;
   color: #333;
   scroll-behavior: smooth;
 }
@@ -31,20 +30,26 @@ header .sub-text {
 .nav {
   position: sticky;
   top: 0;
-  background: #fff;
+  background: white;
   padding: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 10;
 }
 
 .section {
   padding: 4rem 2rem;
-  max-width: 1200px;
-  margin: auto;
+}
+
+.light-bg {
+  background: #f9f9f9;
+}
+
+.dark-bg {
+  background: #333;
+  color: white;
 }
 
 .card {
-  background: #fff;
+  background: white;
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -59,9 +64,8 @@ header .sub-text {
 }
 
 .badge {
-  background: #333;
+  background: #555;
   color: white;
   padding: 10px 15px;
   border-radius: 20px;
-  font-size: 14px;
 }
