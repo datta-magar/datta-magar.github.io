@@ -9,95 +9,100 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="hero" data-aos="fade-in" data-aos-duration="2000">
+  <!-- Header Section -->
+  <header class="hero">
+    <div class="content" data-aos="fade-in">
       <h1>Datta Magar</h1>
-      <p>Software Engineer | Generative AI Enthusiast</p>
-      <p>Building scalable solutions and AI-driven innovations</p>
+      <p>Software Engineer | AI Innovator</p>
+      <p class="sub-text">Delivering impactful solutions and innovations in AI, Data Engineering, and Cloud Computing.</p>
       <div class="cta">
-        <a href="resume.pdf" class="btn">Download Resume</a>
-        <a href="#contact" class="btn">Contact Me</a>
+        <a href="resume.pdf" class="btn">View My Resume</a>
+        <a href="#contact" class="btn">Get in Touch</a>
       </div>
     </div>
   </header>
 
+  <!-- Navigation -->
   <nav>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#work">Experience</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
+  <!-- About Section -->
   <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      Highly motivated Software Engineer with 1.8 years of experience in developing scalable data solutions using GCP and Python Gen AI. 
-      Adept at web development, cybersecurity, and data analysis. Certified in Azure AI, GCP, and AWS Machine Learning. 
-      Bachelor’s in Computer Engineering from Savitribai Phule Pune University (CGPA: 8.3/10).
+      I'm a motivated Software Engineer with a proven track record in AI, scalable data solutions, and web development. 
+      Certified in Azure AI, GCP, and AWS Machine Learning. My goal is to innovate and deliver solutions that drive value and impact.
     </p>
   </section>
 
-  <section id="work" data-aos="fade-right">
+  <!-- Experience Section -->
+  <section id="experience" data-aos="fade-right">
     <h2>Work Experience</h2>
-    <div class="work-item">
+    <div class="experience-card">
       <h3>CapGemini</h3>
-      <p><strong>Software Engineer | Apr 2023 - Present</strong></p>
+      <p>Software Engineer | Apr 2023 - Present</p>
       <ul>
-        <li>Spearheaded the development of SAP VIM TOA automation using Python, achieving a 50% reduction in manual workload.</li>
-        <li>Engineered scalable data solutions using GCP technologies like BigQuery, Bigtable, and Cloud Functions.</li>
-        <li>Optimized ETL workflows using IBM InfoSphere DataStage.</li>
+        <li>Automated workflows using Python, reducing manual workload by 50%.</li>
+        <li>Implemented scalable data pipelines on GCP.</li>
       </ul>
     </div>
-    <div class="work-item">
+    <div class="experience-card">
       <h3>SISTMR Australia</h3>
-      <p><strong>Cyber Security Research Intern | Jul 2022 - Jan 2023</strong></p>
+      <p>Cyber Security Intern | Jul 2022 - Jan 2023</p>
       <ul>
-        <li>Conducted in-depth analysis of DDoS attacks and successfully recovered compromised data.</li>
-        <li>Identified and mitigated vulnerabilities within websites and networks.</li>
+        <li>Conducted analysis of DDoS attacks and enhanced security measures.</li>
+        <li>Recovered compromised data with advanced forensic tools.</li>
       </ul>
     </div>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" data-aos="fade-left">
     <h2>Projects</h2>
-    <div class="project-item">
-      <h3>Social Media Platform for Community Healthcare</h3>
-      <p>Developed a backend for a healthcare networking platform using the MERN stack. Designed REST APIs and features such as online appointments and event management.</p>
+    <div class="project-card">
+      <h3>Community Healthcare Platform</h3>
+      <p>
+        Developed a backend for healthcare networking using the MERN stack. Features included appointment scheduling and event management.
+      </p>
     </div>
-    <div class="project-item">
-      <h3>Laptop Configuration Data Analysis</h3>
-      <p>Implemented ETL workflows using IBM InfoSphere DataStage and GCP for seamless data processing. Created visualizations with Qlik Sense for actionable insights.</p>
+    <div class="project-card">
+      <h3>Laptop Data Analysis</h3>
+      <p>
+        Built ETL pipelines using GCP and visualized insights with Qlik Sense.
+      </p>
     </div>
   </section>
 
+  <!-- Skills Section -->
   <section id="skills" data-aos="zoom-in">
     <h2>Skills</h2>
     <div class="skills-container">
-      <span>Python</span> | <span>Generative AI</span> | <span>Machine Learning</span> | <span>Java</span> | <span>JavaScript</span> | 
-      <span>Node.js</span> | <span>React</span> | <span>MongoDB</span> | <span>SQL</span> | <span>ETL</span> | <span>Git</span>
+      <span>Python</span> | <span>Generative AI</span> | <span>Java</span> | <span>Node.js</span> | <span>MongoDB</span> |
+      <span>React</span> | <span>Cloud Computing</span>
     </div>
   </section>
 
+  <!-- Contact Section -->
   <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
     <p>Email: <a href="mailto:dattamagar211@gmail.com">dattamagar211@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/datta-magar" target="_blank">datta-magar</a></p>
     <p>Phone: +91-9145178126</p>
+    <p>GitHub: <a href="https://github.com/datta-magar" target="_blank">datta-magar</a></p>
   </section>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Datta Magar. All rights reserved.</p>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
