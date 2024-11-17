@@ -34,64 +34,82 @@
   </nav>
 
   <!-- About Section -->
-  <section id="about" data-aos="fade-up">
+  <section id="about" class="section" data-aos="fade-up">
     <h2>About Me</h2>
-    <p>
-      I'm a motivated Software Engineer with a proven track record in AI, scalable data solutions, and web development. 
-      Certified in Azure AI, GCP, and AWS Machine Learning. My goal is to innovate and deliver solutions that drive value and impact.
-    </p>
+    <div class="card">
+      <p>
+        I am a passionate Software Engineer with a strong background in AI, scalable data solutions, and web development. 
+        Certified in Azure AI, GCP, and AWS Machine Learning. My mission is to design innovative, impactful solutions that make a difference.
+      </p>
+    </div>
   </section>
 
   <!-- Experience Section -->
-  <section id="experience" data-aos="fade-right">
+  <section id="experience" class="section" data-aos="fade-right">
     <h2>Work Experience</h2>
-    <div class="experience-card">
+    <div class="card">
       <h3>CapGemini</h3>
-      <p>Software Engineer | Apr 2023 - Present</p>
+      <p><strong>Software Engineer | Apr 2023 - Present</strong></p>
       <ul>
-        <li>Automated workflows using Python, reducing manual workload by 50%.</li>
-        <li>Implemented scalable data pipelines on GCP.</li>
+        <li>Automated SAP VIM TOA workflows using Python, reducing manual effort by 50%.</li>
+        <li>Designed scalable data solutions with GCP technologies.</li>
+        <li>Optimized ETL pipelines using IBM InfoSphere DataStage.</li>
       </ul>
     </div>
-    <div class="experience-card">
+    <div class="card">
       <h3>SISTMR Australia</h3>
-      <p>Cyber Security Intern | Jul 2022 - Jan 2023</p>
+      <p><strong>Cyber Security Intern | Jul 2022 - Jan 2023</strong></p>
       <ul>
-        <li>Conducted analysis of DDoS attacks and enhanced security measures.</li>
-        <li>Recovered compromised data with advanced forensic tools.</li>
+        <li>Analyzed DDoS attacks and implemented security measures.</li>
+        <li>Recovered compromised data using advanced techniques.</li>
       </ul>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" data-aos="fade-left">
+  <section id="projects" class="section" data-aos="fade-left">
     <h2>Projects</h2>
-    <div class="project-card">
+    <div class="card">
       <h3>Community Healthcare Platform</h3>
       <p>
-        Developed a backend for healthcare networking using the MERN stack. Features included appointment scheduling and event management.
+        Developed a backend for healthcare networking using the MERN stack. Features included appointment scheduling, event management, and REST APIs.
       </p>
     </div>
-    <div class="project-card">
-      <h3>Laptop Data Analysis</h3>
+    <div class="card">
+      <h3>Laptop Configuration Data Analysis</h3>
       <p>
-        Built ETL pipelines using GCP and visualized insights with Qlik Sense.
+        Built ETL pipelines with GCP and visualized actionable insights using Qlik Sense.
       </p>
     </div>
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" data-aos="zoom-in">
+  <section id="skills" class="section" data-aos="zoom-in">
     <h2>Skills</h2>
     <div class="skills-container">
-      <span>Python</span> | <span>Generative AI</span> | <span>Java</span> | <span>Node.js</span> | <span>MongoDB</span> |
-      <span>React</span> | <span>Cloud Computing</span>
+      <span class="badge">Python</span>
+      <span class="badge">Generative AI</span>
+      <span class="badge">Machine Learning</span>
+      <span class="badge">Java</span>
+      <span class="badge">JavaScript</span>
+      <span class="badge">Node.js</span>
+      <span class="badge">React</span>
+      <span class="badge">MongoDB</span>
+      <span class="badge">SQL</span>
+      <span class="badge">ETL</span>
+      <span class="badge">Cloud Computing</span>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" data-aos="fade-up">
+  <section id="contact" class="section" data-aos="fade-up">
     <h2>Contact</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
     <p>Email: <a href="mailto:dattamagar211@gmail.com">dattamagar211@gmail.com</a></p>
     <p>Phone: +91-9145178126</p>
     <p>GitHub: <a href="https://github.com/datta-magar" target="_blank">datta-magar</a></p>
@@ -102,7 +120,6 @@
     <p>&copy; 2024 Datta Magar. All rights reserved.</p>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();
