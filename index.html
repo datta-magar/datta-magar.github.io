@@ -1,128 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datta Magar | Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dattatraya Magar's Professional Portfolio">
+    <title>Dattatraya Magar - Software Engineer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <!-- Header Section -->
-  <header class="hero">
-    <div class="content" data-aos="fade-in">
-      <h1>Datta Magar</h1>
-      <p>Software Engineer | AI Innovator</p>
-      <p class="sub-text">Delivering impactful solutions and innovations in AI, Data Engineering, and Cloud Computing.</p>
-      <div class="cta">
-        <a href="resume.pdf" class="btn">View My Resume</a>
-        <a href="#contact" class="btn">Get in Touch</a>
-      </div>
-    </div>
-  </header>
+    <header class="hero">
+        <div class="container">
+            <h1>Dattatraya Magar</h1>
+            <p>Software Engineer | Cloud & Data Solutions Specialist</p>
+            <nav class="contact-info">
+                <a href="mailto:dattamagar211@gmail.com">Email</a>
+                <a href="tel:+919145178126">Phone</a>
+                <a href="https://github.com/datta-magar" target="_blank">GitHub</a>
+            </nav>
+        </div>
+    </header>
 
-  <!-- Navigation -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <main>
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <p>Highly driven Software Engineer with 1.8 years of experience specializing in building scalable data solutions...</p>
+        </section>
 
-  <!-- About Section -->
-  <section id="about" class="section light-bg" data-aos="fade-up">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>
-        I am a passionate Software Engineer with a strong background in AI, scalable data solutions, and web development. 
-        Certified in Azure AI, GCP, and AWS Machine Learning. My mission is to design innovative, impactful solutions that make a difference.
-      </p>
-    </div>
-  </section>
+        <section id="experience" class="section">
+            <h2>Work Experience</h2>
+            <div class="experience-item">
+                <h3>Software Engineer at Capgemini</h3>
+                <p class="date-range">Apr 2023 – Present</p>
+                <ul>
+                    <li>Led the development of SAP VIM TOA automation using Python, achieving a 50% reduction in manual processing.</li>
+                    <li>Engineered scalable data solutions using GCP services (BigQuery, Bigtable, Cloud Storage).</li>
+                </ul>
+            </div>
+        </section>
 
-  <!-- Experience Section -->
-  <section id="experience" class="section dark-bg" data-aos="fade-right">
-    <h2>Work Experience</h2>
-    <div class="card">
-      <h3>CapGemini</h3>
-      <p><strong>Software Engineer | Apr 2023 - Present</strong></p>
-      <ul>
-        <li>Automated SAP VIM TOA workflows using Python, reducing manual effort by 50%.</li>
-        <li>Designed scalable data solutions with GCP technologies.</li>
-        <li>Optimized ETL pipelines using IBM InfoSphere DataStage.</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h3>SISTMR Australia</h3>
-      <p><strong>Cyber Security Intern | Jul 2022 - Jan 2023</strong></p>
-      <ul>
-        <li>Analyzed DDoS attacks and implemented security measures.</li>
-        <li>Recovered compromised data using advanced techniques.</li>
-      </ul>
-    </div>
-  </section>
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Community Healthcare Platform</h3>
+                <p>Developed a robust backend for a professional networking web application in the healthcare sector.</p>
+                <a href="https://github.com/datta-magar/community-healthcare-platform" class="btn-link">View on GitHub</a>
+            </div>
+        </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section light-bg" data-aos="fade-left">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Community Healthcare Platform</h3>
-      <p>
-        Developed a backend for healthcare networking using the MERN stack. Features included appointment scheduling, event management, and REST APIs.
-      </p>
-    </div>
-    <div class="card">
-      <h3>Laptop Configuration Data Analysis</h3>
-      <p>
-        Built ETL pipelines with GCP and visualized actionable insights using Qlik Sense.
-      </p>
-    </div>
-  </section>
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <span class="skill-item">Python</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">GCP</span>
+            </div>
+        </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section dark-bg" data-aos="zoom-in">
-    <h2>Skills</h2>
-    <div class="skills-container">
-      <span class="badge">Python</span>
-      <span class="badge">Generative AI</span>
-      <span class="badge">Machine Learning</span>
-      <span class="badge">Java</span>
-      <span class="badge">JavaScript</span>
-      <span class="badge">Node.js</span>
-      <span class="badge">React</span>
-      <span class="badge">MongoDB</span>
-      <span class="badge">SQL</span>
-      <span class="badge">ETL</span>
-      <span class="badge">Cloud Computing</span>
-    </div>
-  </section>
+        <section id="education" class="section">
+            <h2>Education & Certifications</h2>
+            <div class="education">
+                <h3>Bachelor of Computer Engineering</h3>
+                <p>Savitribai Phule Pune University | CGPA: 8.3/10</p>
+            </div>
+        </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section light-bg" data-aos="fade-up">
-    <h2>Contact</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-    <p>Email: <a href="mailto:dattamagar211@gmail.com">dattamagar211@gmail.com</a></p>
-    <p>Phone: +91-9145178126</p>
-    <p>GitHub: <a href="https://github.com/datta-magar" target="_blank">datta-magar</a></p>
-  </section>
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <form action="mailto:dattamagar211@gmail.com" method="post" enctype="text/plain">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Datta Magar. All rights reserved.</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+    <footer>
+        <p>&copy; 2024 Dattatraya Magar | All rights reserved</p>
+    </footer>
 </body>
 </html>
