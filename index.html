@@ -6,10 +6,11 @@
   <title>Datta Magar | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
   <header>
-    <div class="hero">
+    <div class="hero" data-aos="fade-in" data-aos-duration="2000">
       <h1>Datta Magar</h1>
       <p>Software Engineer | Generative AI Enthusiast</p>
       <p>Building scalable solutions and AI-driven innovations</p>
@@ -25,53 +26,62 @@
       <li><a href="#about">About</a></li>
       <li><a href="#work">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Me</h2>
     <p>
-      I am a passionate Software Engineer with 1.8 years of experience in AI, scalable data solutions, and web development. 
-      Certified in Azure AI, GCP, and AWS Machine Learning, I specialize in delivering impactful solutions that drive value.
+      Highly motivated Software Engineer with 1.8 years of experience in developing scalable data solutions using GCP and Python Gen AI. 
+      Adept at web development, cybersecurity, and data analysis. Certified in Azure AI, GCP, and AWS Machine Learning. 
+      Bachelor’s in Computer Engineering from Savitribai Phule Pune University (CGPA: 8.3/10).
     </p>
   </section>
 
-  <section id="work">
+  <section id="work" data-aos="fade-right">
     <h2>Work Experience</h2>
     <div class="work-item">
       <h3>CapGemini</h3>
-      <p>Software Engineer | Apr 2023 - Present</p>
+      <p><strong>Software Engineer | Apr 2023 - Present</strong></p>
       <ul>
-        <li>Automated SAP VIM TOA workflows, cutting manual efforts by 50%.</li>
-        <li>Developed scalable GCP solutions using BigQuery and Python libraries.</li>
+        <li>Spearheaded the development of SAP VIM TOA automation using Python, achieving a 50% reduction in manual workload.</li>
+        <li>Engineered scalable data solutions using GCP technologies like BigQuery, Bigtable, and Cloud Functions.</li>
+        <li>Optimized ETL workflows using IBM InfoSphere DataStage.</li>
       </ul>
     </div>
     <div class="work-item">
       <h3>SISTMR Australia</h3>
-      <p>Cyber Security Intern | Jul 2022 - Jan 2023</p>
+      <p><strong>Cyber Security Research Intern | Jul 2022 - Jan 2023</strong></p>
       <ul>
-        <li>Analyzed DDoS attacks and strengthened security measures.</li>
-        <li>Resolved vulnerabilities in websites and networks.</li>
+        <li>Conducted in-depth analysis of DDoS attacks and successfully recovered compromised data.</li>
+        <li>Identified and mitigated vulnerabilities within websites and networks.</li>
       </ul>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="projects" data-aos="fade-left">
     <h2>Projects</h2>
     <div class="project-item">
-      <h3>Community Healthcare Platform</h3>
-      <p>Developed a professional networking platform for healthcare using the MERN stack.</p>
-      <a href="#" class="btn">View Project</a>
+      <h3>Social Media Platform for Community Healthcare</h3>
+      <p>Developed a backend for a healthcare networking platform using the MERN stack. Designed REST APIs and features such as online appointments and event management.</p>
     </div>
     <div class="project-item">
-      <h3>Laptop Data Analysis</h3>
-      <p>Implemented ETL workflows and created visualizations using Qlik Sense and GCP.</p>
-      <a href="#" class="btn">View Project</a>
+      <h3>Laptop Configuration Data Analysis</h3>
+      <p>Implemented ETL workflows using IBM InfoSphere DataStage and GCP for seamless data processing. Created visualizations with Qlik Sense for actionable insights.</p>
     </div>
   </section>
 
-  <section id="contact">
+  <section id="skills" data-aos="zoom-in">
+    <h2>Skills</h2>
+    <div class="skills-container">
+      <span>Python</span> | <span>Generative AI</span> | <span>Machine Learning</span> | <span>Java</span> | <span>JavaScript</span> | 
+      <span>Node.js</span> | <span>React</span> | <span>MongoDB</span> | <span>SQL</span> | <span>ETL</span> | <span>Git</span>
+    </div>
+  </section>
+
+  <section id="contact" data-aos="fade-up">
     <h2>Contact</h2>
     <form>
       <input type="text" name="name" placeholder="Your Name" required>
@@ -79,10 +89,18 @@
       <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send</button>
     </form>
+    <p>Email: <a href="mailto:dattamagar211@gmail.com">dattamagar211@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/datta-magar" target="_blank">datta-magar</a></p>
+    <p>Phone: +91-9145178126</p>
   </section>
 
   <footer>
     <p>&copy; 2024 Datta Magar. All rights reserved.</p>
   </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
