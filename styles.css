@@ -5,18 +5,42 @@
   box-sizing: border-box;
 }
 
-/* Typography */
+/* Body and Font */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
   background-color: #fefefe;
   color: #1a1a1a;
   line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+}
+
+/* General Section Styling */
+.section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #222;
+  font-weight: 600;
+}
+
+/* Spacing */
+.section p, .section ul, .section .experience-item, .section .project-card {
+  margin-bottom: 20px;
 }
 
 /* Header */
 .hero {
   background-color: #f9f9f9;
-  padding: 80px 20px;
+  padding: 60px 20px;
   text-align: center;
   border-bottom: 1px solid #eaeaea;
 }
@@ -29,13 +53,13 @@ body {
 
 .hero p {
   font-size: 1.25rem;
-  margin-bottom: 20px;
   color: #555;
 }
 
+/* Contact Information */
 .contact-info a {
   display: inline-block;
-  margin: 0 15px;
+  margin: 0 10px;
   color: #0071e3;
   text-decoration: none;
   font-weight: 500;
@@ -46,44 +70,40 @@ body {
   color: #005bb5;
 }
 
-/* Section */
-.section {
-  padding: 60px 20px;
-  margin: 40px 0;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-h2 {
-  font-size: 2.5rem;
+/* Project and Experience Cards */
+.project-card, .experience-item {
   margin-bottom: 20px;
-  font-weight: 600;
-}
-
-/* Project and Skills */
-.project-card, .skills-list, .experience-item {
-  margin-top: 20px;
-  background-color: #f1f1f1;
   padding: 20px;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s;
 }
 
-.project-card .btn-link {
-  display: block;
-  margin-top: 15px;
-  color: #0071e3;
+.project-card:hover, .experience-item:hover {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+form button, .btn-link {
+  padding: 12px 25px;
+  background-color: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
   text-decoration: none;
-  font-weight: 600;
-  transition: color 0.3s;
+  display: inline-block;
 }
 
-.project-card .btn-link:hover {
-  color: #005bb5;
+form button:hover, .btn-link:hover {
+  background-color: #005bb5;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
-/* Form */
+/* Form Styling */
 form input, form textarea {
   width: 100%;
   padding: 12px;
@@ -91,20 +111,12 @@ form input, form textarea {
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 1rem;
+  transition: border-color 0.3s;
 }
 
-form button.btn-primary {
-  padding: 12px 25px;
-  background-color: #0071e3;
-  color: #fff;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-form button.btn-primary:hover {
-  background-color: #005bb5;
+form input:focus, form textarea:focus {
+  border-color: #0071e3;
+  outline: none;
 }
 
 /* Footer */
@@ -117,13 +129,13 @@ footer {
   border-top: 1px solid #eaeaea;
 }
 
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 768px) {
   .hero h1 {
       font-size: 2.5rem;
   }
 
-  h2 {
+  .section h2 {
       font-size: 2rem;
   }
 }
