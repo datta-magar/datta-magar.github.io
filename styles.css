@@ -1,71 +1,152 @@
-/* General Styles */
-body {
+/* Basic reset */
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts and base settings */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco", Helvetica, Arial, sans-serif;
+  background-color: #f9fafb;
   color: #333;
-  scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
-header {
-  height: 100vh;
-  background: linear-gradient(to bottom, #000, #333);
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/* Hero section */
+.hero {
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: #fff;
+  padding: 80px 20px;
   text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-header h1 {
-  font-size: 4rem;
-  margin-bottom: 1rem;
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 15px;
 }
 
-header .sub-text {
-  margin: 1rem 0;
-  font-size: 1.2rem;
-  color: #ccc;
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
 }
 
-.nav {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 1rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+.contact-info a {
+  color: #f1f1f1;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
+.contact-info a:hover {
+  color: #cce4ff;
+}
+
+/* Section styles */
 .section {
-  padding: 4rem 2rem;
-}
-
-.light-bg {
-  background: #f9f9f9;
-}
-
-.dark-bg {
-  background: #333;
-  color: white;
-}
-
-.card {
-  background: white;
-  padding: 1.5rem;
+  padding: 50px 20px;
+  margin: 30px 0;
+  background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.skills-container {
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+/* Experience, projects, and skills */
+.experience-item, .project-card {
+  background: #f4f4f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: transform 0.2s;
+}
+
+.experience-item:hover, .project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card a {
+  color: #2575fc;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  transition: color 0.3s;
+}
+
+.project-card a:hover {
+  color: #6a11cb;
+}
+
+/* Skills styling */
+.skills-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
   gap: 10px;
 }
 
-.badge {
-  background: #555;
-  color: white;
+.skill-item {
+  background: #e6e6f0;
   padding: 10px 15px;
-  border-radius: 20px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+/* Form styling */
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #6a11cb;
+  outline: none;
+}
+
+form button {
+  padding: 12px 25px;
+  background-color: #2575fc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #6a11cb;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #222;
+  color: #aaa;
+  font-size: 0.875rem;
+  border-top: 1px solid #444;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+
+  h2 {
+      font-size: 2rem;
+  }
 }
