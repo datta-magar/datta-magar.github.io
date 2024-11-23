@@ -31,9 +31,17 @@
     }
 }
 
-/* :root {
+/* 
+/* Force dark mode */
+:root {
+    color-scheme: dark;
+}
+
+/* Force light mode */
+:root {
     color-scheme: light;
-} */
+}  
+*/
 
 /* Reset */
 * {
