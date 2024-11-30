@@ -11,7 +11,7 @@ I am a passionate Software Engineer with expertise in:
 - Generative AI
 - Data Science
 - Web Development
-- Cloud Technologies (GCP, Azure, AWS)
+- Cloud Technologies
 
 ---
 
