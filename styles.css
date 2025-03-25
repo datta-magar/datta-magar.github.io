@@ -1,6 +1,4 @@
 /* Reset and Custom Properties */
-
-
 :root {
     /* Light Mode Colors */
     --bg-primary: #fefefe;
@@ -30,18 +28,6 @@
         --card-hover-shadow: rgba(255, 255, 255, 0.05);
     }
 }
-
-/* 
-/* Force dark mode */
-:root {
-    color-scheme: dark;
-}
-
-/* Force light mode */
-:root {
-    color-scheme: light;
-}  
-*/
 
 /* Reset */
 * {
@@ -106,6 +92,8 @@ body::before {
     margin-bottom: 15px;
     color: var(--text-primary);
     font-weight: 600;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
 }
 
 /* Spacing */
@@ -124,30 +112,19 @@ body::before {
     border-bottom: 1px solid var(--card-border);
     position: relative;
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        45deg,
-        rgba(var(--accent-color), 0.1),
-        transparent
-    );
-    z-index: 0;
+    background-image: url('path/to/your/image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
 }
 
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 10px;
     font-weight: 600;
-    color: var(--text-primary);
     position: relative;
     z-index: 1;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
@@ -202,12 +179,14 @@ form button,
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 form button:hover, 
 .btn-link:hover {
     background-color: var(--accent-hover);
-    transform: translateY(-1px);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 /* Form Styling */
@@ -327,4 +306,3 @@ a:hover {
         color: black;
     }
 }
-
